@@ -18,8 +18,7 @@ print_F = [["" for i in range(5)] for j in range(6)]
 print_U = [["" for i in range(5)] for j in range(7)]
 print_N = [["" for i in range(5)] for j in range(8)]
 
-
-#cod for F
+# Code for F
 lF = ""
 for row in range(5):
     for col in range(6):
@@ -29,30 +28,29 @@ for row in range(5):
             lF += " "
     lF += "\n"
 
-
-
-
 # Code for U
 lU = ""
 for row in range(5):
     for col in range(7):
-        if ((col == 0 or col == 6) and (row <3)) or ((row == 3) and (col==1 or col==5)) or ((row == 4) and (col > 1 and col < 5)):
+        if ((col == 0 or col == 6) and (row < 3)) or ((row == 3) and (col == 1 or col == 5)) or ((row == 4) and (col > 1 and col < 5)):
             lU += "U"
         else:
             lU += " "
     lU += "\n"
 
+# Code for N
 lN = ""
-for row in range(5):
+for row in range(6):
     for col in range(8):
-      if (col == 0 or col == 1 or col == 6 or col == 7  ) or (row == col) :
+        if (col == 0 or col == 1 or col == 6 or col == 7) or (row == col):
             lN += "N"
-      else:
+        else:
             lN += " "
     lN += "\n"
 
-print(lF+lU+lN)
+print(lF,lU,lN)
 
+#task 5
 
-
-
+a = 9.5 * 4.5 - 2,5 * 3 / 45.5 - 3.5
+print(a)
